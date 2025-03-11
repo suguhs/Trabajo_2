@@ -10,13 +10,13 @@
       font-family: 'Arial', sans-serif;
     }
     .inicio {
-  background-image: url('../imagenes/ESLAND_WALLPAPER_02.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Ajusta según sea necesario */
-}
-@media (max-width: 375px) {
+      background-image: url('../imagenes/ESLAND_WALLPAPER_02.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; /* Ajusta según sea necesario */
+    }
+    @media (max-width: 425px) {
       body {
         font-size: 14px;
       }
@@ -40,16 +40,15 @@
         padding: 0 10px;
         margin-left: 30px;
       }
+      .hecho-por-hugo {
+        display: none;
+      }
     }
-
   </style>
   <title>Inicio Eslands</title>
-
 </head>
 <body class="bg-dark text-white">
   <div class="container" >
-
-    <!-- Header en fila (logo, título y menú) -->
     <header class="d-flex justify-content-between align-items-center bg-light text-dark p-3 sticky-top shadow">
       <div class="d-flex align-items-center">
         <a href="../index.html">
@@ -65,47 +64,28 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Contenido principal -->
     <main class="mt-4" id="inicio">
       <div class="d-flex flex-column align-items-center text-center bg-primary bg-gradient p-4 rounded">
         <img src="../imagenes/logo_basico.svg" width="100" class="mb-3" alt="Logo Básico">
         <p class="fw-bold">Bienvenidos/as a los Premios ESLAND</p>
-        <p>
-          El cine tiene los Oscars, la música tiene los Grammy y el streaming tiene los ESLAND. Los premios que celebran la creatividad y el talento de los mejores creadores de contenido de la comunidad hispanohablante.
-          España, Latinoamérica y Andorra unidas por creadores, creadoras y sus comunidades, para recordar y revivir algunos de los mejores momentos del año.
-          Tras dos galas celebradas, una en el Palau de la Música Catalana de Barcelona, y otra en el Auditorio Nacional de la Ciudad de México, solo queda esperar a la tercera edición en Andorra.
-        </p>
+        <p>El cine tiene los Oscars, la música tiene los Grammy y el streaming tiene los ESLAND. Los premios que celebran la creatividad y el talento de los mejores creadores de contenido de la comunidad hispanohablante. España, Latinoamérica y Andorra unidas por creadores, creadoras y sus comunidades, para recordar y revivir algunos de los mejores momentos del año. Tras dos galas celebradas, una en el Palau de la Música Catalana de Barcelona, y otra en el Auditorio Nacional de la Ciudad de México, solo queda esperar a la tercera edición en Andorra.</p>
       </div>
     </main>
-
-    <!-- Sección: Carrusel integrado con el video -->
     <section class="mt-4">
       <h2 class="mb-3 text-center">Primer Y Segundo Trailer De Los Premios</h2>
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <!-- Primer slide: Video de YouTube -->
           <div class="carousel-item active">
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/aL8kcA3ZDOs?si=iPvbIOYut-k06sYR" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/aL8kcA3ZDOs?si=iPvbIOYut-k06sYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
-          <!-- Segundo slide: Imagen -->
           <div class="carousel-item active">
             <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/9VHqKbR9LgM?si=fh6Kkkuv9ss5E4in" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
-            </iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9VHqKbR9LgM?si=fh6Kkkuv9ss5E4in" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
+        </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
@@ -116,8 +96,6 @@
         </button>
       </div>
     </section>
-
-    <!-- FOTO DE LA PRIMIRA GALA TEATRO -->
     <main class="my-4">
       <section class="bg-primary text-white p-4 rounded shadow">
           <div class="row align-items-center">
@@ -132,11 +110,9 @@
           </div>
       </section>
   </main>
-
-    <!-- Footer -->
     <footer class="bg-light text-dark p-3 rounded-top d-flex justify-content-between align-items-center mb-1">
       <p class="mb-0 ms-3">Derechos de Autor Reservados</p>
-      
+      <p class="hecho-por-hugo justify-content-center mb-0">Hecho Por Hugo Novo</p>
       <div class="d-flex gap-3 me-3">
         <img src="../imagenes/facebook.png" width="40" alt="Facebook">
         <img src="../imagenes/logotipo-de-instagram.png" width="40" alt="Instagram">
@@ -144,10 +120,7 @@
         <img src="../imagenes/youtube.png" width="40" alt="YouTube">
       </div>
     </footer>
-    
-
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-`
