@@ -77,7 +77,8 @@
 <body class="bg-dark text-white">
   <div class="container">
     <!-- Encabezado -->
-    <header class="d-flex justify-content-between align-items-center bg-light text-dark p-3 sticky-top shadow">
+    <header class="d-flex justify-content-between align-items-center bg-light text-dark p-3 sticky-top shadow ">
+      <div class="d-none d-md-flex">
       <div class="d-flex align-items-center">
         <a href="../index.html">
           <img src="../imagenes/logo_basico.svg" alt="Logo" width="100" class="me-2">
@@ -86,34 +87,88 @@
       </div>
       <nav>
         <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-dark fw-bold" href="../index.html">INICIO</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-bold" href="info.html">INFO</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-bold" href="registro.html">REGISTRO</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-bold" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-bold" href="/paginas/info.html">INFO</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-bold" href="/paginas/registro.html">REGISTRO</a></li>
         </ul>
       </nav>
+      </div>
+    
+    <div class="container-fluid d-md-none">
+      <div id="lineanav" class="row z-3 sticky-top textos">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand mx-auto ps-5" href="index.html"><img id="e3-logo" src="imgs/e3-logo.png" alt=""></a>
+              <button class="navbar-toggler me-3 bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <li class="nav-item active mx-auto pe-2">
+                      <a class="nav-link text-black" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item mx-auto pe-2">
+                      <a class="nav-link text-black" href="info.html">INFO</a>
+                  </li>
+                  <li class="nav-item mx-auto pe-2">
+                      <a class="nav-link text-black" href="registro.html">REGISTRO</a>
+                  </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
     </header>
 
-    <!-- Sección con imagen de fondo y texto encima -->
-    <main class="my-4">
-      <section class="fondo-gala">
-        <div class="contenido">
+    
+<!-- Sección con imagen de fondo y texto -->
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-md-9 fondo-gala d-flex align-items-center justify-content-center">
+        <div class="contenido text-center">
           <h1 class="fw-bold">La Última Gala</h1>
-          <div class="mt-4">
-            <p class="mx-4 px-3 fw-bold">
-              Revive los mejores momentos de la última edición de los Premios ESLAND,
-            </p>
-            <p class="mx-4 px-3 fw-bold">
-              donde se premió a los mejores creadores de contenido del mundo hispanohablante.
-            </p>
-          </div>
+          <p class="mx-4 px-3 fw-bold">
+            Revive los mejores momentos de la última edición de los Premios ESLAND,
+            donde se premió a los mejores creadores de contenido del mundo hispanohablante.
+          </p>
         </div>
-      </section>
+      </div>
+      
+      <div class="bg-primary text-white col-md-3 d-flex align-items-center bg-dark text-white p-4 ">
+        <p>
+          Los premios ESLAND celebran la creatividad y el esfuerzo de los streamers y creadores de contenido más influyentes en la comunidad hispanohablante. 
+          Cada año, miles de personas votan para elegir a sus favoritos en distintas categorías, destacando lo mejor del entretenimiento digital. 
+          Desde la mejor trayectoria hasta el streamer revelación del año, la gala se convierte en un evento imperdible para los fans. 
+          Además, cuenta con presentaciones en vivo, sorpresas y la emoción de conocer a los ganadores en tiempo real.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="my-4">
+  <section class=" text-white p-4 rounded shadow">
+    <h2 class="text-center mt-4 mb-4">Premio Conmemortativo streamers</h2>
+    <div class="container ">
+      <div class="row align-items-center">
+          <div class="col-md-6">
+              
+              <p>Los Esland son premios organizados por el streamer TheGrefg para reconocer el esfuerzo y apoyo de la comunidad hacia los creadores de contenido.</p>
+              <p>La gala de los Esland se celebra a mediados de febrero y cada año cambia de ubicación, alternando entre España, Latinoamérica y Andorra.</p>
+          </div>
+          <div class="col-md-6 text-center">
+              <img src="../imagenes/inicio_gala.png" class="img-fluid rounded" alt="Gala Eslands">
+          </div>
+      </div>
+      </div>
+  </section>
+</main>
+
 
       <!-- Sección de tarjetas (Solo para pantallas medianas y grandes) -->
       <div class="container md-">
         <h2 class="text-center mt-4">Ganadores de la Última Edición</h2>
         <!-- Sección de tarjetas de una a una-->
-        <div class="row mt-4 d-none d-md-flex">
+        <div class="row mt-4 d-none d-md-flex"> 
           <div class="justify-content-center d-flex" id="cards">
             <!-- Streamer del AÑo -->
             <div class="col-md-4 ms-3">
@@ -210,7 +265,7 @@
       </div>
 
         <!-- Sección de Carrusel (Solo para dispositivos móviles) -->
-        <div class="d-md-none mt-4">
+        <div class="d-md-none mt-4"> //d-none oculta el contenido en pantallas medianas y grandes
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -296,16 +351,26 @@
       </section>
 
       <!-- Sección del mapa interactivo -->
+ 
       <section class="container my-5">
         <h2 class="text-center">Ubicación del Evento</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-10 d-flex justify-content-center">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.1430102063296!2d2.1727378760596565!3d41.38757517129995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fa77ab0441%3A0x7faa64b56a736c43!2sPalau%20de%20la%20M%C3%BAsica%20Catalana!5e1!3m2!1ses!2ses!4v1741292094870!5m2!1ses!2ses" 
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+                  
+            <p>
+              La ciudad mas representativa de los eslands y que formo parte del recuerdo de todas las personas que acudieron 
+              a la gala fue un evento lleno de lloros alegrias y una maravillosa compañia por parte de los creadores
+            </p>
+            
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.1430102063296!2d2.1727378760596565!3d41.38757517129995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fa77ab0441%3A0x7faa64b56a736c43!2sPalau%20de%20la%20M%C3%BAsica%20Catalana!5e1!3m2!1ses!2ses!4v1741292094870!5m2!1ses!2ses" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+ 
         </div>
       </section>
     
